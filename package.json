@@ -74,6 +74,7 @@
     "node": ">=18.17.0"
   },
   "scripts": {
+    "prepublish": "npm run build",
     "autobahn": "npm run build && tsx bench/autobahn/run.ts",
     "build": "tsup",
     "bench": "npm run build && tsx bench/run.ts",
