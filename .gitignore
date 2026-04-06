@@ -1,3 +1,22 @@
-dist
-coverage
-node_modules
+dist/
+coverage/
+node_modules/
+
+# Package manager lockfiles
+*-lock.json
+pnpm-lock.yaml
+yarn.lock
+bun.lock
+bun.lockb
+
+# Bench and local generated reports
+bench/results/
+bench/autobahn/results/
+
+# Build and package artifacts
+*.tgz
+*.tsbuildinfo
+
+# Logs and editor / OS noise
+*.log
+.DS_Store
