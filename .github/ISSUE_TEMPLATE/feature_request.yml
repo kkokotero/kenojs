@@ -1,0 +1,71 @@
+name: Feature Request
+description: Suggest an improvement to the Keno API, behavior, documentation, performance, or developer experience.
+title: "[feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for sharing an idea for Keno.
+
+        The best requests describe the real problem first, then propose a solution.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - HTTP server
+        - WebSocket server
+        - HTTP client
+        - WebSocket client
+        - Middleware
+        - Plugins
+        - HTTP/2 or TLS
+        - Concurrency
+        - Tooling or docs
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What is hard, missing, confusing, or repetitive today?
+      placeholder: I need a cleaner way to share typed route contracts between server and client code.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the API or behavior you would like to see.
+      placeholder: Add a lightweight helper that derives client contracts from route definitions.
+    validations:
+      required: true
+  - type: textarea
+    id: api_sketch
+    attributes:
+      label: API sketch
+      description: Optional, but very helpful for design discussions.
+      render: ts
+  - type: dropdown
+    id: breaking_change
+    attributes:
+      label: Could this be a breaking change?
+      options:
+        - No
+        - Yes
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What workarounds or alternative designs did you consider?
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add links, examples from other libraries, or project-specific constraints.

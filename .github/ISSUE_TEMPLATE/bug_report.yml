@@ -1,0 +1,108 @@
+name: Bug Report
+description: Report a reproducible bug or regression in Keno.
+title: "[bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve Keno.
+
+        Please include a small reproduction whenever possible. Reproducible reports are the fastest to fix.
+  - type: input
+    id: version
+    attributes:
+      label: Keno version
+      description: Which released version, commit hash, or local revision are you using?
+      placeholder: 0.1.0 or a1b2c3d
+    validations:
+      required: true
+  - type: dropdown
+    id: runtime
+    attributes:
+      label: Runtime
+      description: Where are you running Keno?
+      options:
+        - Node.js
+        - Bun
+        - Browser
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: runtime_version
+    attributes:
+      label: Runtime version
+      placeholder: Node 20.12.2, Bun 1.2.x
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: Ubuntu 24.04, macOS 15, Windows 11
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - HTTP server
+        - WebSocket server
+        - HTTP client
+        - WebSocket client
+        - Middleware
+        - Plugins
+        - HTTP/2 or TLS
+        - Concurrency
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the bug clearly and concisely.
+      placeholder: A prepared client request loses query parameters when converted to a Request.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest set of steps to reproduce the issue.
+      placeholder: |
+        1. Create an app or client with ...
+        2. Send a request or run an example ...
+        3. Observe ...
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: Minimal code sample
+      description: Paste a focused snippet, request fixture, or failing test case.
+      render: ts
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: The prepared request should preserve the encoded query string.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      placeholder: The query string is missing and the server receives a different URL.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs, screenshots, or extra context
+      description: Include stack traces, HTTP traces, screenshots, or related notes if helpful.

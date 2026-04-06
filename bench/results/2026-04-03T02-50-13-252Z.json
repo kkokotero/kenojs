@@ -1,0 +1,211 @@
+{
+  "benchmarkVersion": 2,
+  "cpuBound": [
+    {
+      "latencyMs": 197.77,
+      "name": "keno",
+      "requestsPerSec": 255,
+      "throughputMiB": 0.05
+    },
+    {
+      "latencyMs": 64.1,
+      "name": "keno-worker-pool",
+      "requestsPerSec": 770.17,
+      "throughputMiB": 0.14
+    },
+    {
+      "latencyMs": 65.31,
+      "name": "keno-threaded",
+      "requestsPerSec": 755,
+      "throughputMiB": 0.13
+    },
+    {
+      "latencyMs": 209.35,
+      "name": "node",
+      "requestsPerSec": 245,
+      "throughputMiB": 0.04
+    },
+    {
+      "latencyMs": 228.73,
+      "name": "express",
+      "requestsPerSec": 220,
+      "throughputMiB": 0.05
+    },
+    {
+      "latencyMs": 217.14,
+      "name": "fastify",
+      "requestsPerSec": 235,
+      "throughputMiB": 0.04
+    },
+    {
+      "latencyMs": 203.91,
+      "name": "koa",
+      "requestsPerSec": 255,
+      "throughputMiB": 0.05
+    },
+    {
+      "latencyMs": 203.57,
+      "name": "tinyhttp",
+      "requestsPerSec": 250,
+      "throughputMiB": 0.05
+    },
+    {
+      "latencyMs": 202.27,
+      "name": "hono",
+      "requestsPerSec": 255,
+      "throughputMiB": 0.04
+    }
+  ],
+  "generatedAt": "2026-04-03T02:50:13.252Z",
+  "httpHello": [
+    {
+      "latencyMs": 3.82,
+      "name": "keno",
+      "requestsPerSec": 11511.2,
+      "throughputMiB": 1.99
+    },
+    {
+      "latencyMs": 2.44,
+      "name": "keno-threaded",
+      "requestsPerSec": 17158.41,
+      "throughputMiB": 2.96
+    },
+    {
+      "latencyMs": 3.42,
+      "name": "node",
+      "requestsPerSec": 13127.2,
+      "throughputMiB": 2.27
+    },
+    {
+      "latencyMs": 5.32,
+      "name": "express",
+      "requestsPerSec": 8580.8,
+      "throughputMiB": 2
+    },
+    {
+      "latencyMs": 3.55,
+      "name": "fastify",
+      "requestsPerSec": 12317.6,
+      "throughputMiB": 2.14
+    },
+    {
+      "latencyMs": 4.63,
+      "name": "koa",
+      "requestsPerSec": 9782,
+      "throughputMiB": 1.69
+    },
+    {
+      "latencyMs": 4.14,
+      "name": "tinyhttp",
+      "requestsPerSec": 10664.8,
+      "throughputMiB": 2.09
+    },
+    {
+      "latencyMs": 3.77,
+      "name": "hono",
+      "requestsPerSec": 11794.4,
+      "throughputMiB": 1.87
+    }
+  ],
+  "options": {
+    "connections": 50,
+    "cpuValue": 28,
+    "duration": 5,
+    "pipelining": 1,
+    "wsClients": 20,
+    "wsMessages": 500
+  },
+  "staticFile": [
+    {
+      "latencyMs": 4.52,
+      "name": "keno",
+      "requestsPerSec": 9970.4,
+      "throughputMiB": 2.9
+    },
+    {
+      "latencyMs": 1.99,
+      "name": "keno-threaded",
+      "requestsPerSec": 20424,
+      "throughputMiB": 5.94
+    },
+    {
+      "latencyMs": 7.2,
+      "name": "node",
+      "requestsPerSec": 6502.8,
+      "throughputMiB": 1.28
+    },
+    {
+      "latencyMs": 7.66,
+      "name": "express",
+      "requestsPerSec": 6141.2,
+      "throughputMiB": 2.05
+    },
+    {
+      "latencyMs": 6.94,
+      "name": "fastify",
+      "requestsPerSec": 6698.67,
+      "throughputMiB": 2.1
+    },
+    {
+      "latencyMs": 10.95,
+      "name": "koa",
+      "requestsPerSec": 4370,
+      "throughputMiB": 1.13
+    },
+    {
+      "latencyMs": 7.06,
+      "name": "tinyhttp",
+      "requestsPerSec": 6620.67,
+      "throughputMiB": 1.98
+    }
+  ],
+  "websocketCompressed": [
+    {
+      "durationMs": 1606.23,
+      "messagesPerSec": 6225.75,
+      "name": "keno"
+    },
+    {
+      "durationMs": 1195.13,
+      "messagesPerSec": 8367.27,
+      "name": "keno-threaded"
+    },
+    {
+      "durationMs": 1143.05,
+      "messagesPerSec": 8748.54,
+      "name": "ws"
+    },
+    {
+      "durationMs": 1152.36,
+      "messagesPerSec": 8677.87,
+      "name": "fastify-websocket"
+    }
+  ],
+  "websocketEcho": [
+    {
+      "durationMs": 428.82,
+      "messagesPerSec": 23319.93,
+      "name": "keno"
+    },
+    {
+      "durationMs": 346.09,
+      "messagesPerSec": 28894.45,
+      "name": "keno-threaded"
+    },
+    {
+      "durationMs": 330.83,
+      "messagesPerSec": 30226.87,
+      "name": "ws"
+    },
+    {
+      "durationMs": 321.19,
+      "messagesPerSec": 31134.35,
+      "name": "fastify-websocket"
+    },
+    {
+      "durationMs": 377.46,
+      "messagesPerSec": 26492.67,
+      "name": "websocket"
+    }
+  ]
+}

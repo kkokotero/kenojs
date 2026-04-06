@@ -1,0 +1,7 @@
+Keno Incident Runbook
+=====================
+
+1. Confirm health endpoint status.
+2. Review active WebSocket clients and queue depth.
+3. Verify upstream credentials and deployment region.
+4. Roll back if error rate exceeds the agreed threshold.

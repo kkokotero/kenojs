@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Keno Static Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Static delivery</p>
+        <h1>Fast static assets with a tiny Keno app</h1>
+        <p class="lede">
+          This page is served from disk, while the metrics panel below fetches a dynamic API route.
+        </p>
+      </section>
+      <section class="panel">
+        <h2>Runtime Metrics</h2>
+        <pre id="metrics">Loading...</pre>
+      </section>
+    </main>
+    <script type="module" src="/assets/app.js"></script>
+  </body>
+</html>

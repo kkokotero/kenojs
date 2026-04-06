@@ -1,0 +1,8 @@
+{
+  "team": "Platform Enablement",
+  "members": [
+    { "name": "Karen", "role": "Staff Engineer" },
+    { "name": "Diego", "role": "Product Designer" },
+    { "name": "Marina", "role": "Customer Success Lead" }
+  ]
+}
