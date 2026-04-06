@@ -1,6 +1,6 @@
 {
-  "name": "keno",
-  "version": "0.1.0",
+  "name": "kenojs",
+  "version": "0.1.1",
   "description": "A modular TypeScript-first server toolkit with typed HTTP routing, WebSocket support, and scalable transport primitives.",
   "type": "module",
   "private": false,
@@ -70,12 +70,23 @@
     "dist",
     "README.md"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kkokotero/kenojs.git"
+  },
+  "homepage": "https://github.com/kkokotero/kenojs",
+  "bugs": {
+    "url": "https://github.com/kkokotero/kenojs/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "sideEffects": false,
   "engines": {
     "node": ">=18.17.0"
   },
   "scripts": {
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "autobahn": "npm run build && tsx bench/autobahn/run.ts",
     "build": "tsup",
     "bench": "npm run build && tsx bench/run.ts",
