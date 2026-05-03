@@ -1,6 +1,6 @@
 {
   "name": "kenojs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A modular TypeScript-first server toolkit with typed HTTP routing, WebSocket support, and scalable transport primitives.",
   "type": "module",
   "private": false,
